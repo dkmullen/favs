@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Favs</title>
+    <style>
+      body {
+        background-color: black;
+        /* background-image: url('./bluematrix.jpg'); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-size: 1.3rem;
+        font-family: sans-serif;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .fav-item:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+      #page-wrapper {
+        max-width: 650px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 100px;
+      }
+      .fav-item {
+        display: flex;
+        padding: 10px;
+        border-radius: 8px;
+        width: 300px;
+      }
+      .logo {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: rgb(54 86 114);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .name {
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+      }
+      @media screen and (max-width: 449px) {
+        #page-wrapper {
+          max-width: 100%;
+          margin-left: 50px;
+        }
+      }
+      @media screen and (max-width: 649px) {
+        #page-wrapper {
+          margin-top: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <a href="https://mail.google.com/mail/u/0/#inbox">
+        <div class="fav-item">
+          <div class="logo">M</div>
+          <div class="name">Gmail</div>
+        </div></a
+      >
+      <a href="https://espn.com">
+        <div class="fav-item">
+          <div class="logo">E</div>
+          <div class="name">ESPN</div>
+        </div></a
+      >
+      <a
+        href="https://us-east-2.console.aws.amazon.com/console/home?region=us-east-2#"
+      >
+        <div class="fav-item">
+          <div class="logo">A</div>
+          <div class="name">AWS</div>
+        </div></a
+      >
+      <a href="https://linktr.ee/dkmullen">
+        <div class="fav-item">
+          <div class="logo">L</div>
+          <div class="name">LinkTree</div>
+        </div></a
+      >
+      <a href="https://github.com/dkmullen">
+        <div class="fav-item">
+          <div class="logo">G</div>
+          <div class="name">Github</div>
+        </div></a
+      >
+      <a href="https://kagi.com/">
+        <div class="fav-item">
+          <div class="logo">K</div>
+          <div class="name">Kagi</div>
+        </div></a
+      >
+      <a href="https://daringfireball.net/">
+        <div class="fav-item">
+          <div class="logo">DF</div>
+          <div class="name">Daring Fireball</div>
+        </div></a
+      >
+    </div>
+  </body>
+</html>
